@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about AWS VPC (Virtual Private Cloud) with CloudTechInsight - Network isolation in the cloud for beginners">
+    <meta name="keywords" content="CloudTechInsight, AWS VPC, VPC tutorial, cloud networking, AWS network isolation">
+    <meta name="author" content="CloudTechInsight">
+    <title>AWS VPC - CloudTechInsight</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CloudTechInsight</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ec2.html">AWS EC2</a></li>
+                    <li><a href="s3.html">AWS S3</a></li>
+                    <li><a href="vpc.html" class="active">AWS VPC</a></li>
+                    <li><a href="auto-scaling.html">AWS Auto Scaling</a></li>
+                    <li><a href="lambda.html">AWS Lambda</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>AWS VPC (Virtual Private Cloud)</h2>
+            <p>Isolated cloud network environments</p>
+        </div>
+    </section>
+
+    <section class="service-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="service-description">
+                    <p>AWS VPC (Virtual Private Cloud) allows you to provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define, giving you complete control over your virtual networking environment.</p>
+                    
+                    <p>With VPC, you can create a private, secure, and scalable environment similar to a traditional network in your own data center, but with the benefits of using AWS's scalable infrastructure.</p>
+                    
+                    <p>You can customize your network configuration by selecting your own IP address range, creating subnets, and configuring route tables and network gateways to precisely control how traffic flows within your cloud environment.</p>
+                    
+                    <p>For security, VPC provides multiple layers of protection including security groups (virtual firewalls for EC2 instances) and network access control lists (ACLs) that act as firewalls for subnets, giving you fine-grained control over inbound and outbound network traffic.</p>
+                    
+                    <p>VPC enables you to connect to your on-premises networks using secure VPN connections or AWS Direct Connect, creating hybrid architectures where some resources run in the cloud while others remain in your physical data centers.</p>
+                    
+                    <p>You can segment your VPC into multiple subnets across different Availability Zones for high availability, with public subnets for resources that need internet access and private subnets for resources that shouldn't be directly accessible from the internet.</p>
+                    
+                    <p>VPC is designed to be highly available and reliable, with no single points of failure and the ability to spread resources across multiple Availability Zones within a region for fault tolerance.</p>
+                    
+                    <p>You can enable VPC Flow Logs to capture information about the IP traffic going to and from network interfaces in your VPC, helping you troubleshoot connectivity issues and monitor for suspicious activity.</p>
+                    
+                    <p>VPC endpoints allow you to privately connect your VPC to supported AWS services without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection, reducing data transfer costs and increasing security.</p>
+                    
+                    <p>Every AWS account comes with a default VPC that's preconfigured for easy use, but creating custom VPCs gives you much more control over your network design and security posture for production workloads.</p>
+                </div>
+                <div class="cta-box">
+                    <h3>Want to learn more about AWS VPC?</h3>
+                    <p>Check out our detailed video tutorials on AWS VPC!</p>
+                    <a href="https://www.youtube.com/@CloudTechInsight" class="btn" target="_blank">Watch on YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CloudTechInsight</h2>
+                    <p>Making cloud computing accessible to everyone</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ec2.html">AWS EC2</a></li>
+                        <li><a href="s3.html">AWS S3</a></li>
+                        <li><a href="vpc.html">AWS VPC</a></li>
+                        <li><a href="auto-scaling.html">AWS Auto Scaling</a></li>
+                        <li><a href="lambda.html">AWS Lambda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@CloudTechInsight" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 CloudTechInsight. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

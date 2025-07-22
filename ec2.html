@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about AWS EC2 (Elastic Compute Cloud) with CloudTechInsight - Virtual servers in the cloud for beginners">
+    <meta name="keywords" content="CloudTechInsight, AWS EC2, EC2 tutorial, cloud computing, virtual servers AWS">
+    <meta name="author" content="CloudTechInsight">
+    <title>AWS EC2 - CloudTechInsight</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CloudTechInsight</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ec2.html" class="active">AWS EC2</a></li>
+                    <li><a href="s3.html">AWS S3</a></li>
+                    <li><a href="vpc.html">AWS VPC</a></li>
+                    <li><a href="auto-scaling.html">AWS Auto Scaling</a></li>
+                    <li><a href="lambda.html">AWS Lambda</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>AWS EC2 (Elastic Compute Cloud)</h2>
+            <p>Virtual servers in the cloud</p>
+        </div>
+    </section>
+
+    <section class="service-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="service-description">
+                    <p>AWS EC2 (Elastic Compute Cloud) is Amazon's service that provides resizable compute capacity in the cloud, essentially allowing you to rent virtual servers (instances) to run your applications.</p>
+                    
+                    <p>EC2 instances come in various types optimized for different use cases such as compute-intensive, memory-intensive, or balanced workloads, giving you the flexibility to choose the right hardware configuration.</p>
+                    
+                    <p>You can launch instances with different operating systems including Linux, Windows, and macOS, and you only pay for the compute time you actually use, making it cost-effective for businesses of all sizes.</p>
+                    
+                    <p>EC2 instances can be launched in multiple geographic regions and availability zones for high availability and fault tolerance, with the ability to expand or reduce capacity within minutes.</p>
+                    
+                    <p>Security features include virtual firewalls (Security Groups), isolated cloud networks (VPCs), and encrypted storage volumes (EBS), helping you meet compliance requirements and protect your applications.</p>
+                    
+                    <p>Starting with EC2 is simple - you can launch an instance from a pre-configured Amazon Machine Image (AMI), connect via SSH or RDP, and begin deploying your applications within minutes.</p>
+                    
+                    <p>EC2 integrates with other AWS services like S3 for storage, RDS for databases, and CloudWatch for monitoring, allowing you to build complete, scalable applications in the AWS ecosystem.</p>
+                    
+                    <p>You can customize instances with your specific software, libraries, and configurations, and save these customizations as your own AMIs for future deployments.</p>
+                    
+                    <p>For cost optimization, EC2 offers various pricing options including On-Demand (pay by the hour), Reserved Instances (lower hourly rate with upfront commitment), and Spot Instances (bid for unused capacity at steep discounts).</p>
+                    
+                    <p>Common use cases include web and application hosting, development and test environments, batch processing, high-performance computing, and running backend systems for mobile and gaming applications.</p>
+                </div>
+                <div class="cta-box">
+                    <h3>Want to learn more about AWS EC2?</h3>
+                    <p>Check out our detailed video tutorials on AWS EC2!</p>
+                    <a href="https://www.youtube.com/@CloudTechInsight" class="btn" target="_blank">Watch on YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CloudTechInsight</h2>
+                    <p>Making cloud computing accessible to everyone</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ec2.html">AWS EC2</a></li>
+                        <li><a href="s3.html">AWS S3</a></li>
+                        <li><a href="vpc.html">AWS VPC</a></li>
+                        <li><a href="auto-scaling.html">AWS Auto Scaling</a></li>
+                        <li><a href="lambda.html">AWS Lambda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@CloudTechInsight" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 CloudTechInsight. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

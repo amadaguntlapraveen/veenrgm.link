@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about AWS Auto Scaling with CloudTechInsight - Automatically adjust resources based on demand for beginners">
+    <meta name="keywords" content="CloudTechInsight, AWS Auto Scaling, auto scaling tutorial, cloud elasticity, AWS resource scaling">
+    <meta name="author" content="CloudTechInsight">
+    <title>AWS Auto Scaling - CloudTechInsight</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CloudTechInsight</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ec2.html">AWS EC2</a></li>
+                    <li><a href="s3.html">AWS S3</a></li>
+                    <li><a href="vpc.html">AWS VPC</a></li>
+                    <li><a href="auto-scaling.html" class="active">AWS Auto Scaling</a></li>
+                    <li><a href="lambda.html">AWS Lambda</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>AWS Auto Scaling</h2>
+            <p>Automatically adjust resources based on demand</p>
+        </div>
+    </section>
+
+    <section class="service-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="service-description">
+                    <p>AWS Auto Scaling monitors your applications and automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost, allowing your infrastructure to scale up during demand spikes and scale down during quiet periods.</p>
+                    
+                    <p>With EC2 Auto Scaling, you can create groups of EC2 instances that can grow or shrink automatically based on criteria you define, such as CPU utilization, network traffic, or custom metrics from CloudWatch, ensuring you have the right number of instances available to handle the load.</p>
+                    
+                    <p>Auto Scaling helps maintain application availability by performing health checks on your instances and automatically replacing unhealthy instances, providing built-in fault tolerance for your applications without manual intervention.</p>
+                    
+                    <p>You can set minimum and maximum limits on the number of instances in your Auto Scaling group, ensuring you always have at least a certain number of instances running while putting a cap on costs by limiting the maximum number that can be launched.</p>
+                    
+                    <p>Auto Scaling supports both horizontal scaling (adding more instances) and integration with services that enable vertical scaling (increasing resources within an instance), giving you flexibility in how you handle varying workloads.</p>
+                    
+                    <p>For predictable workload patterns, you can implement scheduled scaling to proactively adjust capacity based on known traffic patterns, such as increasing capacity during business hours and decreasing it overnight or on weekends.</p>
+                    
+                    <p>Auto Scaling can be used with Elastic Load Balancing to automatically distribute traffic across your healthy instances, ensuring no single instance becomes overwhelmed while maximizing the utilization of your resources.</p>
+                    
+                    <p>The service works across multiple AWS services beyond EC2, including Amazon ECS, Amazon DynamoDB, and Amazon Aurora, allowing you to apply auto scaling principles to various parts of your application stack.</p>
+                    
+                    <p>Auto Scaling is highly customizable with scaling policies that can respond to multiple metrics simultaneously, cooling-down periods to prevent rapid scaling fluctuations, and the ability to suspend and resume scaling processes as needed.</p>
+                    
+                    <p>By automatically matching resources to demand, Auto Scaling helps optimize your AWS costs by eliminating the need to overprovision resources to handle peak load, while still ensuring your application can handle unexpected traffic increases without performance degradation.</p>
+                </div>
+                <div class="cta-box">
+                    <h3>Want to learn more about AWS Auto Scaling?</h3>
+                    <p>Check out our detailed video tutorials on AWS Auto Scaling!</p>
+                    <a href="https://www.youtube.com/@CloudTechInsight" class="btn" target="_blank">Watch on YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CloudTechInsight</h2>
+                    <p>Making cloud computing accessible to everyone</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ec2.html">AWS EC2</a></li>
+                        <li><a href="s3.html">AWS S3</a></li>
+                        <li><a href="vpc.html">AWS VPC</a></li>
+                        <li><a href="auto-scaling.html">AWS Auto Scaling</a></li>
+                        <li><a href="lambda.html">AWS Lambda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@CloudTechInsight" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 CloudTechInsight. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

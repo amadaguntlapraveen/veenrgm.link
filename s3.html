@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about AWS S3 (Simple Storage Service) with CloudTechInsight - Cloud storage solutions for beginners">
+    <meta name="keywords" content="CloudTechInsight, AWS S3, S3 tutorial, cloud storage, AWS beginners">
+    <meta name="author" content="CloudTechInsight">
+    <title>AWS S3 - CloudTechInsight</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CloudTechInsight</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ec2.html">AWS EC2</a></li>
+                    <li><a href="s3.html" class="active">AWS S3</a></li>
+                    <li><a href="vpc.html">AWS VPC</a></li>
+                    <li><a href="auto-scaling.html">AWS Auto Scaling</a></li>
+                    <li><a href="lambda.html">AWS Lambda</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>AWS S3 (Simple Storage Service)</h2>
+            <p>Scalable object storage in the cloud</p>
+        </div>
+    </section>
+
+    <section class="service-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="service-description">
+                    <p>AWS S3 (Simple Storage Service) is an object storage service that offers industry-leading scalability, data availability, security, and performance for storing and retrieving any amount of data from anywhere on the web.</p>
+                    
+                    <p>S3 stores data as objects within resources called "buckets," with each object consisting of a file and optional metadata that describes the file, making organization and retrieval straightforward for beginners.</p>
+                    
+                    <p>With S3, you can store virtually unlimited amounts of data, with individual objects ranging from 0 bytes to 5 terabytes in size, perfect for everything from small website images to large video files or data backups.</p>
+                    
+                    <p>S3 offers different storage classes optimized for different use cases, including frequently accessed data, infrequently accessed data, and archival storage, helping you balance cost with access needs.</p>
+                    
+                    <p>The service provides 99.999999999% (11 9's) of durability, meaning your data is highly protected against loss, with data automatically replicated across multiple facilities within your chosen AWS Region.</p>
+                    
+                    <p>S3 can be used for a wide range of scenarios including website hosting, mobile app data storage, backup and restore, disaster recovery, data archiving, and as a data lake for big data analytics.</p>
+                    
+                    <p>Security features include bucket policies, access control lists (ACLs), encryption options, and integration with AWS Identity and Access Management (IAM) to control who can access your data.</p>
+                    
+                    <p>S3 integrates seamlessly with other AWS services like CloudFront for content delivery, Lambda for serverless computing with S3 events, and Athena for analyzing data directly in S3 without moving it.</p>
+                    
+                    <p>You can manage your S3 storage through multiple interfaces including the AWS Management Console, AWS CLI, AWS SDKs, and REST APIs, giving you flexibility in how you interact with the service.</p>
+                    
+                    <p>With S3's pay-only-for-what-you-use pricing model, you're charged based on storage used, requests made, and data transferred, making it cost-effective for businesses of all sizes to start small and scale as needed.</p>
+                </div>
+                <div class="cta-box">
+                    <h3>Want to learn more about AWS S3?</h3>
+                    <p>Check out our detailed video tutorials on AWS S3!</p>
+                    <a href="https://www.youtube.com/@CloudTechInsight" class="btn" target="_blank">Watch on YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CloudTechInsight</h2>
+                    <p>Making cloud computing accessible to everyone</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ec2.html">AWS EC2</a></li>
+                        <li><a href="s3.html">AWS S3</a></li>
+                        <li><a href="vpc.html">AWS VPC</a></li>
+                        <li><a href="auto-scaling.html">AWS Auto Scaling</a></li>
+                        <li><a href="lambda.html">AWS Lambda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@CloudTechInsight" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 CloudTechInsight. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

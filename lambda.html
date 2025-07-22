@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about AWS Lambda with CloudTechInsight - Serverless computing basics for beginners">
+    <meta name="keywords" content="CloudTechInsight, AWS Lambda, serverless tutorial, function as a service, AWS serverless">
+    <meta name="author" content="CloudTechInsight">
+    <title>AWS Lambda - CloudTechInsight</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CloudTechInsight</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ec2.html">AWS EC2</a></li>
+                    <li><a href="s3.html">AWS S3</a></li>
+                    <li><a href="vpc.html">AWS VPC</a></li>
+                    <li><a href="auto-scaling.html">AWS Auto Scaling</a></li>
+                    <li><a href="lambda.html" class="active">AWS Lambda</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>AWS Lambda</h2>
+            <p>Serverless computing made simple</p>
+        </div>
+    </section>
+
+    <section class="service-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="service-description">
+                    <p>AWS Lambda is a serverless computing service that runs your code in response to events without requiring you to provision or manage servers, allowing you to focus entirely on your code while AWS handles the infrastructure management.</p>
+                    
+                    <p>With Lambda, you only pay for the compute time you consume - there is no charge when your code isn't running, making it highly cost-effective for workloads with variable traffic or idle periods, and eliminating the cost of over-provisioning resources.</p>
+                    
+                    <p>Lambda functions can be triggered by various AWS services such as S3 (when files are uploaded), DynamoDB (when data changes), API Gateway (for web applications), or on a schedule using CloudWatch Events, enabling you to build event-driven architectures.</p>
+                    
+                    <p>You can write Lambda functions in multiple programming languages including Node.js, Python, Java, Go, Ruby, and .NET Core, allowing you to use the language you're most comfortable with or that best suits your specific use case.</p>
+                    
+                    <p>Lambda automatically scales your applications by running code in parallel, processing each trigger individually, enabling your function to scale precisely with the size of the workload without any configuration required from you.</p>
+                    
+                    <p>The service integrates with AWS X-Ray for debugging and monitoring, CloudWatch for logging and metrics, and AWS SAM (Serverless Application Model) for easier deployment, helping you build, monitor, and troubleshoot your serverless applications.</p>
+                    
+                    <p>Lambda functions can run for up to 15 minutes, making them suitable for a wide range of tasks from simple API requests to more complex data processing jobs, while still maintaining the serverless paradigm of ephemeral, stateless compute.</p>
+                    
+                    <p>Common use cases for Lambda include data processing (such as real-time file validation, filtering, sorting, or transforming), backends for web, mobile, and IoT applications, and task automation like scheduled batch jobs or infrastructure management.</p>
+                    
+                    <p>Lambda provides built-in fault tolerance by automatically running your code across multiple Availability Zones in a region, and if a function fails, it automatically retries with configurable retry behavior, enhancing the reliability of your applications.</p>
+                    
+                    <p>Getting started with Lambda is straightforward - you simply upload your code (or write it directly in the Lambda console), set memory requirements and timeout settings, define triggers, and your function is ready to execute whenever the triggering event occurs.</p>
+                </div>
+                <div class="cta-box">
+                    <h3>Want to learn more about AWS Lambda?</h3>
+                    <p>Check out our detailed video tutorials on AWS Lambda!</p>
+                    <a href="https://www.youtube.com/@CloudTechInsight" class="btn" target="_blank">Watch on YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CloudTechInsight</h2>
+                    <p>Making cloud computing accessible to everyone</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ec2.html">AWS EC2</a></li>
+                        <li><a href="s3.html">AWS S3</a></li>
+                        <li><a href="vpc.html">AWS VPC</a></li>
+                        <li><a href="auto-scaling.html">AWS Auto Scaling</a></li>
+                        <li><a href="lambda.html">AWS Lambda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@CloudTechInsight" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 CloudTechInsight. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
