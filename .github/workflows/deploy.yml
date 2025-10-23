@@ -25,6 +25,6 @@ jobs:
 
       - name: Sync website files to S3 (recommended)
         run: |
-          aws s3 sync ./ s3://rgmn.link/ --delete \
+          aws s3 sync ./ s3://veenrgm.link/ --delete \
             --exclude ".git/*" \
             --exclude ".github/*"
